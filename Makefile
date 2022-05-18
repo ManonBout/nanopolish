@@ -127,7 +127,7 @@ eigen/INSTALL:
 		wget -O $(EIGEN_VERSION).tar.bz2 https://gitlab.com/libeigen/eigen/-/archive/$(EIGEN_VERSION)/eigen-$(EIGEN_VERSION).tar.bz2; \
 	fi
 	tar -xjf $(EIGEN_VERSION).tar.bz2 || exit 255
-	mv eigen-eigen-* eigen || exit 255
+	mv eigen-$(EIGEN_VERSION) eigen || exit 255
 
 #
 # Source files
